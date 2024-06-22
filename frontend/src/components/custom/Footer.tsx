@@ -44,7 +44,7 @@ export function Footer({ data }: Readonly<FooterProps>) {
             return (
               <Link
                 key={link.id}
-                className="text-black hover:text-gray-300"
+                className="text-black hover:text-wildstrawberry-500"
                 href={link.url}
               >
                 {selectSocialIcon(link.url)}
@@ -100,7 +100,7 @@ function GithubIcon(props: any) {
 function StravaIcon() {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="text-black hover:text-gray-300">
+      <DropdownMenuTrigger className="text-black hover:text-wildstrawberry-500">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

@@ -25,7 +25,7 @@ export default async function Home() {
   return (
     <main>
       {blocks.map(blockRenderer)}
-      <div className="absolute inset-0 z-[999] bg-[url(/layout/grid.svg)] bg-center"></div>
+      <div className="absolute inset-0 z-[999] pointer-events-none bg-[url(/layout/grid.svg)] bg-center"></div>
     </main>
   );
 }

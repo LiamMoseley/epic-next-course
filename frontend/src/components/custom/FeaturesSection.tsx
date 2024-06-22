@@ -38,7 +38,7 @@ export function FeatureSection({
                 className="flex flex-col items-center text-center"
               >
                 <div
-                  className="w-12 h-12 mb-4 text-black"
+                  className="w-12 h-12 mb-4 text-wildstrawberry-400"
                   dangerouslySetInnerHTML={{
                     __html: JSON.parse(feature.icon).component,
                   }}

@@ -30,7 +30,9 @@ export function Logo({
 }: Readonly<LogoProps>) {
   return (
     <Link className="flex items-center gap-2" href="/">
-      <MountainIcon className={"h-6 w-6  text-white"} />
+      <MountainIcon
+        className={"h-6 w-6  text-white hover:text-wildstrawberry-500"}
+      />
       <span
         className={`text-lg font-semibold ${
           dark ? "text-black" : "text-black"
