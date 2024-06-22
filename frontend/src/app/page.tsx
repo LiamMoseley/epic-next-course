@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 
 import { getHomePageData } from "@/data/loaders";
@@ -25,7 +26,7 @@ export default async function Home() {
   return (
     <main>
       {blocks.map(blockRenderer)}
-      <div className="absolute inset-0 z-[999] pointer-events-none bg-[url(/layout/grid.svg)] bg-center"></div>
+      <div className="absolute inset-0 bg-[url(/layout/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
     </main>
   );
 }

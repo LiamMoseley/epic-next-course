@@ -34,11 +34,15 @@ function selectSocialIcon(url: string) {
 export function Footer({ data }: Readonly<FooterProps>) {
   const { logoText, socialLink, text } = data;
   return (
-    <div className="footer fixed bottom-0 w-full dark bg-gradient-to-r from-royalblue-300 from-10% via-pictonblue-200 via-30% to-mountainmeadow-200 to-90% text-black py-8">
-      <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between">
-        <Logo dark text={logoText.text} />
-        <p className="mt-4 md:mt-0 text-sm text-black">{text}</p>
-        <div className="flex items-center space-x-4">
+    <div className="footer fixed bottom-0 w-full z-[20] dark bg-gradient-to-r from-royalblue-300 from-10% via-pictonblue-200 via-30% to-mountainmeadow-200 to-90% text-black">
+      {/* <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between md:visible">
+        <div className="collapse sm:visible mr-5">
+          <Logo dark text={logoText.text} />
+        </div>
+        <p className="collapse sm:visible mt-4 md:mt-0 text-sm text-black items-center text-center">
+          {text}
+        </p>
+        <div className="flex items-center space-x-4 ml-4">
           {StravaIcon()}
           {socialLink.map((link) => {
             return (
@@ -53,7 +57,37 @@ export function Footer({ data }: Readonly<FooterProps>) {
             );
           })}
         </div>
-      </div>
+      </div> */}
+
+      <section className="container px-4 py-6">
+        <div
+          className={`grid h-10 grid-cols-[0%_0%_100%] md:h-full md:grid-cols-[20%_60%_20%]`}
+        >
+          <div className="collapse md:visible ">
+            <Logo dark text={logoText.text} />
+          </div>
+          <div className="collapse md:visible flex items-center justify-center">
+            <p className="text-sm text-black items-center text-center">
+              {text}
+            </p>
+          </div>
+          <div className="flex h-10 sm:h-full items-center space-x-4 justify-center md:justify-end">
+            {StravaIcon()}
+            {socialLink.map((link) => {
+              return (
+                <Link
+                  key={link.id}
+                  className="text-black hover:text-wildstrawberry-500"
+                  href={link.url}
+                >
+                  {selectSocialIcon(link.url)}
+                  <span className="sr-only">Visit us at {link.text}</span>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
