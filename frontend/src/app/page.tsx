@@ -39,8 +39,6 @@ export default async function Home() {
 
   const { blocks } = strapiData;
 
-  console.dir(blocks, { depth: null });
-
   return (
     <main>
       <HeroSection data={blocks[0]} />
