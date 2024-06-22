@@ -22,15 +22,8 @@ export function HeroSection({ data }: { readonly data: HeroSectionProps }) {
   const { heading, subHeading, image } = data;
   const imageURL = baseUrl + image.url;
   return (
-    <header className="relative h-[400px] overflow-hidden">
-      <StrapiImage
-        alt="Background"
-        className="absolute inset-0 object-cover w-full h-full brightness-75 blur-sm aspect/16:9"
-        src={imageURL}
-        height={1080}
-        width={1920}
-      />
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white bg-black bg-opacity-20">
+    <header className="relative h-[200px] bg-gradient-to-r from-royalblue-300 from-10% via-pictonblue-200 via-30% to-mountainmeadow-200 to-90% overflow-hidden">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white bg-black bg-opacity-30">
         <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl">
           {heading}
         </h1>

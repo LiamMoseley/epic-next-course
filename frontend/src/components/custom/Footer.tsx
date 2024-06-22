@@ -4,8 +4,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -36,17 +34,17 @@ function selectSocialIcon(url: string) {
 export function Footer({ data }: Readonly<FooterProps>) {
   const { logoText, socialLink, text } = data;
   return (
-    <div className="footer fixed bottom-0 w-full dark bg-gray-900 text-white py-8">
+    <div className="footer fixed bottom-0 w-full dark bg-gradient-to-r from-royalblue-300 from-10% via-pictonblue-200 via-30% to-mountainmeadow-200 to-90% text-black py-8">
       <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between">
         <Logo dark text={logoText.text} />
-        <p className="mt-4 md:mt-0 text-sm text-gray-300">{text}</p>
+        <p className="mt-4 md:mt-0 text-sm text-black">{text}</p>
         <div className="flex items-center space-x-4">
           {StravaIcon()}
           {socialLink.map((link) => {
             return (
               <Link
                 key={link.id}
-                className="text-white hover:text-gray-300"
+                className="text-black hover:text-gray-300"
                 href={link.url}
               >
                 {selectSocialIcon(link.url)}
@@ -102,7 +100,7 @@ function GithubIcon(props: any) {
 function StravaIcon() {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="text-white hover:text-gray-300">
+      <DropdownMenuTrigger className="text-black hover:text-gray-300">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Image from "next/image";
 
 import { getHomePageData } from "@/data/loaders";
 
@@ -22,5 +22,10 @@ export default async function Home() {
   const { blocks } = strapiData;
   if (!blocks) return <p>No sections found</p>;
 
-  return <main>{blocks.map(blockRenderer)}</main>;
+  return (
+    <main>
+      {blocks.map(blockRenderer)}
+      <div className="absolute inset-0 z-[999] bg-[url(/layout/grid.svg)] bg-center"></div>
+    </main>
+  );
 }
