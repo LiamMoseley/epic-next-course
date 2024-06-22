@@ -48,34 +48,39 @@ Follow these steps to set up your project:
 
 3. **Setup Strapi Backend**:
 
-   - Navigate to the Strapi folder:
-     ```bash
-     cd strapi-backend
-     ```
-   - Install Strapi dependencies:
-     ```bash
-     npm install
-     # or
-     yarn install
-     ```
-   - Start Strapi in development mode:
-     ```bash
-     npm run develop
-     # or
-     yarn develop
-     ```
+   Navigate to the Strapi folder:
+
+   ```bash
+   cd strapi-backend
+   ```
+
+   Install Strapi dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+   Start Strapi in development mode:
+
+   ```bash
+   npm run develop
+   # or
+   yarn develop
+   ```
 
 4. **Setup Next.js Frontend**:
-   - Navigate to the Next.js folder:
-     ```bash
-     cd ../nextjs-frontend
-     ```
-   - Install Next.js dependencies:
-     ```bash
-     npm install
-     # or
-     yarn install
-     ```
+   Navigate to the Next.js folder:
+   ```bash
+   cd ../nextjs-frontend
+   ```
+   Install Next.js dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
 ## Project Structure
 
@@ -95,23 +100,27 @@ project-root/
 
 ### Backend (Strapi)
 
-- Start the Strapi server:
-  ```bash
-  npm run develop
-  # or
-  yarn develop
-  ```
-- Access the Strapi admin panel at `http://localhost:1337/admin`.
+Start the Strapi server:
+
+```bash
+npm run develop
+# or
+yarn develop
+```
+
+Access the Strapi admin panel at `http://localhost:1337/admin`.
 
 ### Frontend (Next.js)
 
-- Start the Next.js development server:
-  ```bash
-  npm run dev
-  # or
-  yarn dev
-  ```
-- Access the frontend at `http://localhost:3000`.
+Start the Next.js development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Access the frontend at `http://localhost:3000`.
 
 ## Features Implemented
 
