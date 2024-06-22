@@ -7,14 +7,17 @@
   "options": {},
   "attributes": {
     "heading": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "subHeading": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "icon": {
       "type": "customField",
-      "customField": "plugin::heroicons-field.icon-picker"
+      "customField": "plugin::heroicons-field.icon-picker",
+      "required": true
     }
   }
 }

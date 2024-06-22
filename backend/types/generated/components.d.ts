@@ -7,9 +7,10 @@ export interface ComponentsFeature extends Schema.Component {
     description: '';
   };
   attributes: {
-    heading: Attribute.String;
-    subHeading: Attribute.Text;
+    heading: Attribute.String & Attribute.Required;
+    subHeading: Attribute.Text & Attribute.Required;
     icon: Attribute.Text &
+      Attribute.Required &
       Attribute.CustomField<'plugin::heroicons-field.icon-picker'>;
   };
 }
