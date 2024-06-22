@@ -815,6 +815,11 @@
   resolved "https://registry.yarnpkg.com/@hapi/bourne/-/bourne-3.0.0.tgz#f11fdf7dda62fe8e336fa7c6642d9041f30356d7"
   integrity sha512-Waj1cwPXJDucOib4a3bAISsKJVb15MKi9IvmTI/7ssVEm6sywXGjVJDhl6/umt1pK1ZS7PacXU3A1PmFKHEZ2w==
 
+"@heroicons/react@^2.0.18":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-2.1.4.tgz#3beff2f55c3170a355383489d0ccc3f5a9b34a99"
+  integrity sha512-ju0wj0wwrUTMQ2Yceyrma7TKuI3BpSjp+qKqV81K9KGcUHdvTMdiwfRc2cwXBp3uXtKuDZkh0v03nWOQnJFv2Q==
+
 "@internationalized/date@^3.5.2":
   version "3.5.4"
   resolved "https://registry.yarnpkg.com/@internationalized/date/-/date-3.5.4.tgz#49ba11634fd4350b7a9308e297032267b4063c44"
@@ -8978,6 +8983,13 @@ statuses@2.0.1, statuses@^2.0.1:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA==
+
+strapi-plugin-heroicons-field@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-heroicons-field/-/strapi-plugin-heroicons-field-0.0.5.tgz#695644200281befdf0a222aacfb05e123562969e"
+  integrity sha512-1wIHrJ1kyhiVzksyujmTCEJV3eDRe/vk74zjSx9b92Trl+L7fZI5OV/u1AV9Vyr+/fjQKiijq7kLOEwFzFYFBA==
+  dependencies:
+    "@heroicons/react" "^2.0.18"
 
 stream-chain@2.2.5, stream-chain@^2.2.5:
   version "2.2.5"

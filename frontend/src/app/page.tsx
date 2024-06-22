@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import { getHomePageData } from "@/data/loaders";
 
 import { HeroSection } from "@/components/custom/HeroSection";

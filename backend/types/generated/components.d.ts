@@ -4,11 +4,13 @@ export interface ComponentsFeature extends Schema.Component {
   collectionName: 'components_components_features';
   info: {
     displayName: 'Feature';
+    description: '';
   };
   attributes: {
     heading: Attribute.String;
     subHeading: Attribute.Text;
-    icon: Attribute.Enumeration<['CLOCK_ICON', 'CHECK_ICON', 'CLOUD_ICON']>;
+    icon: Attribute.Text &
+      Attribute.CustomField<'plugin::heroicons-field.icon-picker'>;
   };
 }
 
@@ -33,7 +35,13 @@ export interface LayoutFeaturesSection extends Schema.Component {
   attributes: {
     title: Attribute.String;
     description: Attribute.Text;
-    feature: Attribute.Component<'components.feature', true>;
+    feature: Attribute.Component<'components.feature', true> &
+      Attribute.SetMinMax<
+        {
+          max: 3;
+        },
+        number
+      >;
   };
 }
 
