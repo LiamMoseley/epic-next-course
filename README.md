@@ -1,6 +1,6 @@
 # Epic Next.js Tutorial: Building a Real-Life Project
 
-Welcome to the Epic Next.js application! This project is based on the following tutorial (https://strapi.io/blog/epic-next-js-14-tutorial-learn-next-js-by-building-a-real-life-project-part-1-2) to help learn Next.js and Strapi by building a real-world application. This README will guide you through the setup and development process, summarizing the key steps from the tutorial.
+Welcome to the Epic Next.js application! This project is based on the following [tutorial on Strapi's blog](https://strapi.io/blog/epic-next-js-14-tutorial-learn-next-js-by-building-a-real-life-project-part-1-2) to help learn Next.js and Strapi by building a real-world application. This README will guide you through the setup and development process, summarizing the key steps from the tutorial.
 
 ## Table of Contents
 
