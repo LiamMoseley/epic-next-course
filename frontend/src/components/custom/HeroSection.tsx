@@ -7,26 +7,19 @@ interface Image {
   alternativeText: string | null;
 }
 
-interface Link {
-  id: number;
-  url: string;
-  text: string;
-}
-
 interface HeroSectionProps {
   id: number;
   __component: string;
   heading: string;
   subHeading: string;
   image: Image;
-  link: Link;
 }
 
 export function HeroSection({ data }: { readonly data: HeroSectionProps }) {
   const { heading, subHeading, image, link } = data;
   const imageURL = "http://localhost:1337" + image.url;
   return (
-    <header className="relative h-[600px] overflow-hidden">
+    <header className="relative h-[400px] overflow-hidden">
       <StrapiImage
         alt="Background"
         className="absolute inset-0 object-cover w-full h-full aspect/16:9"
@@ -39,12 +32,6 @@ export function HeroSection({ data }: { readonly data: HeroSectionProps }) {
           {heading}
         </h1>
         <p className="mt-4 text-lg md:text-xl lg:text-2xl">{subHeading}</p>
-        <Link
-          className="mt-8 inline-flex items-center justify-center px-6 py-3 text-base font-medium text-black bg-white rounded-md shadow hover:bg-gray-100"
-          href={link.url}
-        >
-          {link.text}
-        </Link>
       </div>
     </header>
   );

@@ -19,11 +19,6 @@
     },
     "subHeading": {
       "type": "text"
-    },
-    "link": {
-      "type": "component",
-      "repeatable": false,
-      "component": "components.link"
     }
   }
 }

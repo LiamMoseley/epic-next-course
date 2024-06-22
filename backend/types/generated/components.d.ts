@@ -61,10 +61,10 @@ export interface LayoutHeader extends Schema.Component {
   collectionName: 'components_layout_headers';
   info: {
     displayName: 'Header';
+    description: '';
   };
   attributes: {
     logoText: Attribute.Component<'components.link'>;
-    ctaButton: Attribute.Component<'components.link'>;
   };
 }
 
@@ -78,7 +78,6 @@ export interface LayoutHeroSection extends Schema.Component {
     image: Attribute.Media<'images'>;
     heading: Attribute.String;
     subHeading: Attribute.Text;
-    link: Attribute.Component<'components.link'>;
   };
 }
 
