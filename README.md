@@ -1,6 +1,6 @@
 # Epic Next.js Tutorial: Building a Real-Life Project
 
-Welcome to the Epic Next.js tutorial! This project is designed to help you learn Next.js by building a real-world application. This README will guide you through the setup and development process, summarizing the key steps from the tutorial.
+Welcome to the Epic Next.js application! This project is based on the following tutorial (https://strapi.io/blog/epic-next-js-14-tutorial-learn-next-js-by-building-a-real-life-project-part-1-2) to help learn Next.js and Strapi by building a real-world application. This README will guide you through the setup and development process, summarizing the key steps from the tutorial.
 
 ## Table of Contents
 
@@ -13,11 +13,10 @@ Welcome to the Epic Next.js tutorial! This project is designed to help you learn
 7. [Running the Project](#running-the-project)
 8. [Learn More](#learn-more)
 9. [Contributing](#contributing)
-10. [License](#license)
 
 ## Introduction
 
-This tutorial will take you through the process of creating a fully functional application using Next.js and Strapi. By the end of this project, you'll have a solid understanding of how to build and deploy a Next.js application with a headless CMS backend.
+This tutorial will take you through the process of creating a fully functional application using Next.js and Strapi.
 
 ## Prerequisites
 
@@ -169,11 +168,3 @@ For a detailed step-by-step guide, visit the [tutorial on Strapi's blog](https:/
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or additions.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
----
-
-Happy coding!

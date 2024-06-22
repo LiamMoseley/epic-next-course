@@ -11,11 +11,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Description": {
-      "type": "text"
+    "description": {
+      "type": "string"
     }
   }
 }
