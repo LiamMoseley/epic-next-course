@@ -25,7 +25,7 @@ async function getStrapiData(path: string) {
   url.search = homePageQuery;
 
   try {
-    const response = await fetch(url.href);
+    const response = await fetch(url.href, { cache: "no-store" });
     const data = await response.json();
     const flattenedData = flattenAttributes(data);
     return flattenedData;
