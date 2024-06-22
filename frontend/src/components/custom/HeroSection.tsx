@@ -25,7 +25,7 @@ export function HeroSection({ data }: { readonly data: HeroSectionProps }) {
     <header className="relative h-[400px] overflow-hidden">
       <StrapiImage
         alt="Background"
-        className="absolute inset-0 object-cover w-full h-full aspect/16:9"
+        className="absolute inset-0 object-cover w-full h-full blur-sm aspect/16:9"
         src={imageURL}
         height={1080}
         width={1920}
