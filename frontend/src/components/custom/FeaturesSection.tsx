@@ -20,9 +20,6 @@ export function FeatureSection({
 }) {
   const { feature } = data;
 
-  console.dir(feature);
-  console.log(`featureCount: ${feature.length}`);
-
   let columnCount: number = 3;
   if (feature.length < 3) {
     columnCount = feature.length;
