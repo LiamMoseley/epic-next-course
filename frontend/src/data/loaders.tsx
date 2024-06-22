@@ -1,4 +1,5 @@
 import qs from "qs";
+import { unstable_noStore as noStore } from "next/cache";
 import { flattenAttributes, getStrapiURL } from "@/lib/utils";
 
 const baseUrl = getStrapiURL();
@@ -23,7 +24,18 @@ async function fetchData(url: string) {
   }
 }
 
+export async function getGlobalPageMetadata() {
+  const url = new URL("/api/global", baseUrl);
+
+  url.search = qs.stringify({
+    fields: ["title", "description"],
+  });
+
+  return await fetchData(url.href);
+}
+
 export async function getGlobalData() {
+  noStore();
   const url = new URL("/api/global", baseUrl);
 
   url.search = qs.stringify({
