@@ -51,6 +51,7 @@ export async function getGlobalData() {
 }
 
 export async function getHomePageData() {
+  noStore();
   const url = new URL("/api/home-page", baseUrl);
 
   url.search = qs.stringify({
